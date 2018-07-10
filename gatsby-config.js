@@ -5,27 +5,13 @@ module.exports = {
     title: `Gatsby Default (Blog) Starter`,
   },
   plugins: [
-    'gatsby-plugin-react-next',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: `${__dirname}/content`,
+        path: `${__dirname}/src/content`,
       },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: `${__dirname}/pages`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        precision: 8,
-      }
     },
     {
       resolve: 'gatsby-transformer-remark',
